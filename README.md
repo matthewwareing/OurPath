@@ -24,3 +24,5 @@ Enzyme
 ## Could do better
 Using the react-native components was a new experience and allowed me to become more familiar with flex-box. This was a slight change from my normal setup of bootstrap 'components'. I may have used one too many view components as I wanted to gain a greater familiarity with the generic react-native components.
 I would also update the require('image') to an import for consistency and ES6 best-practices.
+
+![Rendered on Iphone X](https://github.com/mdwareing/OurPath/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202018-08-17%20at%2015.54.05.png "example")
