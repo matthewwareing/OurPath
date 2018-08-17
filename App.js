@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  StyleSheet, Text, View, Image, TextInput
+  StyleSheet, Text, View, Image, TextInput,
 } from 'react-native'
 
 const styles = StyleSheet.create({
@@ -21,6 +21,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  logo: {
+    flex: 0.5,
+    aspectRatio: 3.82,
+    resizeMode: 'contain',
+  },
+  textbar: {
+    padding: 10, fontSize: 20, fontWeight: 'bold', color: 'lightslategrey',
+  },
 })
 
 export default class App extends React.Component {
@@ -32,15 +40,30 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          style={styles.searchbar}
-          placeholder="Enter your name..."
-          autoCapitalize="words"
-          clearButtonMode="while-editing"
-          clearTextOnFocus
-          padding={10}
-          onChangeText={text => this.setState({ text })}
-        />
+        <View style={{ flex: 1 }} />
+        <View style={{ flex: 2 }}>
+          <Image
+            style={styles.logo}
+            source={import('./ourpath_logo.png')}
+          />
+        </View>
+        <View style={{ flex: 2 }}>
+          <Text style={styles.textbar}>
+            {`Hello, my name is ${this.state.text}`}
+          </Text>
+        </View>
+        <View style={{ flex: 2, alignItems: 'flex-end' }}>
+          <TextInput
+            style={styles.searchbar}
+            placeholder="Enter your name..."
+            autoCapitalize="words"
+            clearButtonMode="while-editing"
+            clearTextOnFocus
+            padding={10}
+            onChangeText={text => this.setState({ text })}
+          />
+        </View>
+        <View style={{ flex: 3 }} />
       </View>
     )
   }
