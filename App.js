@@ -44,7 +44,7 @@ export default class App extends React.Component {
         <View style={{ flex: 2 }}>
           <Image
             style={styles.logo}
-            source={import('./ourpath_logo.png')}
+            source={require('./ourpath_logo.png')}
           />
         </View>
         <View style={{ flex: 2 }}>
