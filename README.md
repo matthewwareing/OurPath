@@ -1,14 +1,26 @@
 Create a Simple React Native Application
 
+A IOS react-native application that displays user-input.
+
 1. The app should display the OurPath logo at the top (any logo of ours is fine, but it is up to the candidate to find one)
 2. The app should have text underneath the logo reading 'Hello, my name is '
 3. The app should have a text input underneath the 'Hello, my name is ' which when text is entered, appends text to the end of 'Hello, my name is '.
 
-IOS
+## Getting started
+* Fork this repo and clone to your machine
+* Type ```npm i``` into the terminal to install required node packages  
+* Type ```npm start ios``` to run the app locally
 
-A README.md is optional.
+### Running tests
+* Type ```npm test``` into terminal to run the full test suite.
 
-Test are optional, but recommended.
+## Tech / framework used
+React Native
+EsLint (AirBnb configuration)
+Babel
+Jest
+Enzyme
 
-We recommend setting up eslint for the project (including an .eslintrc file). The styling rules are up to you - but Airbnb's rules are a good place to start.
-
+## Could do better
+Using the react-native components was a new experience and allowed me to become more familiar with flex-box. This was a slight change from my normal setup of bootstrap 'components'. I may have used one too many view components as I wanted to gain a greater familiarity with the generic react-native components.
+I would also update the require('image') to an import for consistency and ES6 best-practices.
