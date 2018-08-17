@@ -15,11 +15,11 @@ A IOS react-native application that displays user-input.
 * Type ```npm test``` into terminal to run the full test suite.
 
 ## Tech / framework used
-React Native
-EsLint (AirBnb configuration)
-Babel
-Jest
-Enzyme
+- React Native
+- EsLint (AirBnb configuration)
+- Babel
+- Jest
+- Enzyme
 
 ## Could do better
 Using the react-native components was a new experience and allowed me to become more familiar with flex-box. This was a slight change from my normal setup of bootstrap 'components'. I may have used one too many view components as I wanted to gain a greater familiarity with the generic react-native components.
